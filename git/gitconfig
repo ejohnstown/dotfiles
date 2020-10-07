@@ -7,7 +7,20 @@
 	ci = commit
 	st = status
 	last = log -1 HEAD
+	df = difftool
+	gf = difftool -g
 [init]
 	defaultBranch = main
 [core]
 	editor = vim
+[gpg]
+	program = gpg
+[diff]
+	guitool = opendiff
+	tool = vimdiff
+[difftool]
+	prompt = false
+[pager]
+	branch = false
+[pull]
+	rebase = false
