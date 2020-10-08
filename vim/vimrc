@@ -19,18 +19,6 @@ syntax on
 match ErrorMsg '\s\+$'
 "match ErrorMsg '\t'
 
-autocmd BufEnter * call Setcomment()
-function! Setcomment()
-	if ((&filetype == "c") || (&filetype == "cpp"))
-		vmap ,c :s/^/\/\//<CR>
-		vmap ,u :s/^\/\///<CR>
-	endif
-	if (&filetype == "perl")
-		vmap ,c :s/^/#/<CR>
-		vmap ,u :s/^#//<CR>
-	endif
-endfunction
-
 filetype plugin on
 set omnifunc=syntaxcomplete#Complete
 " longest common text match while typing, even if only one don't auto choose
