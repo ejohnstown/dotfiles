@@ -9,6 +9,7 @@
 	last = log -1 HEAD
 	df = difftool
 	gf = difftool -g
+	ctags = !$(git rev-parse --git-common-dir)/hooks/ctags
 [init]
 	defaultBranch = main
 [core]
