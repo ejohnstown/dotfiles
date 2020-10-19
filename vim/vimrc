@@ -1,8 +1,9 @@
+execute pathogen#infect()
+
 set exrc
 set ruler
 set showmode
-"set background=light
-set background=dark
+set background=light
 set tabstop=4
 set shiftwidth=4
 set autoindent
@@ -13,40 +14,18 @@ set incsearch
 set printoptions=paper:letter,duplex:off
 set number
 set numberwidth=5
+set expandtab
+set colorcolumn=80
+set cursorline
 syntax on
 
 " trailing whitespace
 match ErrorMsg '\s\+$'
-"match ErrorMsg '\t'
+match ErrorMsg '\t'
 
-filetype plugin on
-set omnifunc=syntaxcomplete#Complete
-" longest common text match while typing, even if only one don't auto choose
-set completeopt=longest,menuone
-
-" smart tab, inserts tab if no completion available, otherwise do right
-" compelte
-function! SuperCleverTab()
-    if strpart(getline('.'), 0, col('.') - 1) =~ '^\s*$'
-        return "\<Tab>"
-    else
-        if &omnifunc != ''
-            return "\<C-X>\<C-O>"
-        elseif &dictionary != ''
-            return "\<C-K>"
-        else
-            return "\<C-N>"
-        endif
-    endif
-endfunction
-
-" map smart tab to <Tab>
-"inoremap <Tab> <C-R>=SuperCleverTab()<cr>
-
-" map <C-Enter(M)> to ctags regen
-"map <C-M> :!ctags -R --sort=yes<cr>
 let mapleader = "\ "
 nnoremap <Leader>o :o
+nnoremap <Leader>r :r
 nnoremap <Leader>x :x<CR>
 nnoremap <Leader>w :w<CR>
 nnoremap <Leader>q :q<CR>
@@ -54,6 +33,12 @@ nnoremap <Leader>e :e
 nnoremap <Leader>m :make<CR>
 nnoremap <Leader>t <C-t>
 nnoremap <Leader>] <C-]>
+nnoremap <Leader>f :Vexplore<CR>
+nnoremap <Leader>d :set background=dark<CR>
+nnoremap <Leader>l :set background=light<CR>
 nmap <Leader><Leader> V
-inoremap jk <ESC>
-"inoremap <ESC> <NOP>
+inoremap ;; <ESC>
+
+:filetype plugin on
+
+let g:airline_theme='minimalist'
