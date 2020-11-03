@@ -1,5 +1,7 @@
 execute pathogen#infect()
 
+set path+=**
+set wildmenu
 set exrc
 set ruler
 set showmode
