@@ -1,5 +1,6 @@
 execute pathogen#infect()
 
+set nocompatible
 set path+=**
 set wildmenu
 set exrc
@@ -41,6 +42,6 @@ nnoremap <Leader>l :set background=light<CR>
 nmap <Leader><Leader> V
 inoremap ;; <ESC>
 
-:filetype plugin on
+filetype plugin on
 
 let g:airline_theme='minimalist'
