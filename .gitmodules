@@ -1,0 +1,18 @@
+[submodule "vim/vim/bundle/vim-airline-themes"]
+	path = vim/vim/bundle/vim-airline-themes
+	url = https://github.com/vim-airline/vim-airline-themes.git
+[submodule "vim/vim/bundle/vim-fugitive"]
+	path = vim/vim/bundle/vim-fugitive
+	url = https://github.com/airblade/vim-fugitive.git
+[submodule "vim/vim/bundle/vim-gitgutter"]
+	path = vim/vim/bundle/vim-gitgutter
+	url = https://github.com/airblade/vim-gitgutter.git
+[submodule "vim/vim/bundle/vim-airline"]
+	path = vim/vim/bundle/vim-airline
+	url = https://github.com/vim-airline/vim-airline.git
+[submodule "vim/vim/bundle/nerdtree"]
+	path = vim/vim/bundle/nerdtree
+	url = https://github.com/preservim/nerdtree.git
+[submodule "vim/vim/bundle/csv.vim"]
+	path = vim/vim/bundle/csv.vim
+	url = https://github.com/chrisbra/csv.vim

@@ -1,11 +1,8 @@
 #!/bin/bash
 
-install_vimrc() {
-    echo "installing vimrc"
-}
-
-install_vimplugins() {
-    echo "installing vim plugins"
+install_vim() {
+    echo "installing vim"
+    curl -LSso vim/vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 }
 
 install_git() {
@@ -18,8 +15,7 @@ install_tmux() {
 
 case "$1" in
     vim)
-        install_vimrc
-        install_vimplugins
+        install_vim
         ;;
     git)
         install_git
@@ -28,8 +24,7 @@ case "$1" in
         install_tmux
         ;;
     all)
-        install_vimrc
-        install_vimplugins
+        install_vim
         install_git
         install_tmux
         ;;

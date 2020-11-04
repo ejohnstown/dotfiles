@@ -1,5 +1,3 @@
-execute pathogen#infect()
-
 set nocompatible
 set path+=**
 set wildmenu
@@ -44,4 +42,5 @@ inoremap ;; <ESC>
 
 filetype plugin on
 
+execute pathogen#infect()
 let g:airline_theme='minimalist'
