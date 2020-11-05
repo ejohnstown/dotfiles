@@ -1,17 +1,39 @@
 #!/bin/bash
 
+DOTFILES="$PWD"
+
+link_file() {
+    TARGET="$HOME/.$(basename "$1")"
+    if test -e "$TARGET"
+    then
+        echo "~${TARGET#$HOME} already exists, skipping"
+    else
+        echo "Creating link for $TARGET"
+        ln -s "$DOTFILES/$1" "$TARGET"
+    fi
+
+}
+
 install_vim() {
-    echo "installing vim"
-    curl -LSso vim/vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+    link_file "vim/vimrc"
+    link_file "vim/vim"
 }
 
 install_git() {
-    echo "installing gitrc"
+    link_file "git/gitconfig"
+    link_file "git/git_template"
 }
 
 install_tmux() {
-    echo "installing tmuxrc"
+    link_file "tmux/tmux.conf"
 }
+
+
+if test ! -e "$HOME/.dotfiles"
+then
+    echo "Creating link for dotfiles at $HOME/.dotfiles"
+    ln -s "$DOTFILES" "$HOME/.dotfiles"
+fi
 
 case "$1" in
     vim)
