@@ -12,6 +12,7 @@
 	ctags = !$(git rev-parse --git-common-dir)/hooks/ctags
 [init]
 	defaultBranch = main
+	templatedir = ~/.git_template
 [core]
 	editor = vim
 [gpg]
