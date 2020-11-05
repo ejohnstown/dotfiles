@@ -15,6 +15,7 @@ link_file() {
 }
 
 install_vim() {
+    git submodule update --init
     link_file "vim/vimrc"
     link_file "vim/vim"
 }
