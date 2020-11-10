@@ -43,4 +43,5 @@ inoremap ;; <ESC>
 filetype plugin on
 
 execute pathogen#infect()
-let g:airline_theme='minimalist'
+let g:airline_theme='light'
+let g:airline_powerline_fonts=1
