@@ -27,6 +27,7 @@ install_git() {
 
 install_tmux() {
     link_file "tmux/tmux.conf"
+    link_file "tmux/tmux"
 }
 
 

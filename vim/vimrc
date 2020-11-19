@@ -3,7 +3,8 @@ set path+=**
 set wildmenu
 set exrc
 set ruler
-set showmode
+" mode replaced with airline
+set noshowmode
 set background=light
 set tabstop=4
 set shiftwidth=4
@@ -20,8 +21,11 @@ set colorcolumn=80
 set cursorline
 syntax on
 
+highlight ColorColumn ctermbg=red
+
 " trailing whitespace
 match ErrorMsg '\s\+$'
+" tabs
 match ErrorMsg '\t'
 
 let mapleader = "\ "
