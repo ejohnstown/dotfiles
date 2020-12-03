@@ -19,6 +19,7 @@ set numberwidth=5
 set expandtab
 set colorcolumn=80
 set cursorline
+set directory=~/.vim/swap
 syntax on
 
 highlight ColorColumn ctermbg=red
