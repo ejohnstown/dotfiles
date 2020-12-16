@@ -1,9 +1,6 @@
 set nocompatible
 set path+=**
 set wildmenu
-set exrc
-set ruler
-" mode replaced with airline
 set noshowmode
 set background=light
 set tabstop=4
