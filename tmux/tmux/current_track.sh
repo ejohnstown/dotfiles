@@ -1,6 +1,12 @@
 #!/bin/bash
 # From http://www.tylerewing.co/tmux-now-playing
 
+if test -f "$HOME/.disable_current_track"
+then
+    echo "🎧 (disabled)"
+    exit
+fi
+
 NOW_PLAYING=$(osascript <<EOF
 set spotify_state to false
 set itunes_state to false

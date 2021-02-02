@@ -1,0 +1,2 @@
+coreutils tmux vim ctags gnu-sed gawk automake libtool autoconf gpg dos2unix libevent
+figlet lolcat cowsay ansiweather transmission-cli youtube-dl
