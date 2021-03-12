@@ -15,6 +15,7 @@
 	templatedir = ~/.git_template
 [core]
 	editor = vim
+	excludesfile = /Users/john/.gitignore_global
 [gpg]
 	program = gpg
 [diff]
