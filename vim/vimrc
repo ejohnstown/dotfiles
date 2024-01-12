@@ -11,7 +11,7 @@ set cindent
 set nowrap
 set incsearch
 set printoptions=paper:letter,duplex:off
-set number
+set number relativenumber
 set numberwidth=5
 set expandtab
 set colorcolumn=80
