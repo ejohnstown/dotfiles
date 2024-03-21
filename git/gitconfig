@@ -9,10 +9,8 @@
 	last = log -1 HEAD
 	df = difftool
 	gf = difftool -g
-	ctags = !$(git rev-parse --git-common-dir)/hooks/ctags
 [init]
 	defaultBranch = main
-	templatedir = ~/.git_template
 [core]
 	editor = vim
 	excludesfile = ~/.gitignore_global

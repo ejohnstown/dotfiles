@@ -2,7 +2,7 @@ set nocompatible
 set path+=**
 set wildmenu
 set noshowmode
-set background=light
+set background=dark
 set tabstop=4
 set shiftwidth=4
 set autoindent

@@ -22,7 +22,6 @@ install_vim() {
 
 install_git() {
     link_file "git/gitconfig"
-    link_file "git/git_template"
 }
 
 install_tmux() {
