@@ -16,3 +16,12 @@
 [submodule "tmux/tmux/plugins/tpm"]
 	path = tmux/tmux/plugins/tpm
 	url = https://github.com/tmux-plugins/tpm
+[submodule "vim/vim/bundle/tagbar"]
+	path = vim/vim/bundle/tagbar
+	url = https://github.com/preservim/tagbar
+[submodule "vim/vim/bundle/vimoutliner"]
+	path = vim/vim/bundle/vimoutliner
+	url = https://github.com/vimoutliner/vimoutliner
+[submodule "vim/vim/bundle/vimwiki"]
+	path = vim/vim/bundle/vimwiki
+	url = https://github.com/vimwiki/vimwiki

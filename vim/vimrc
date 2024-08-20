@@ -16,7 +16,6 @@ set numberwidth=5
 set expandtab
 set colorcolumn=80
 set cursorline
-set directory=~/.vim/swap
 syntax on
 
 highlight ColorColumn ctermbg=red
@@ -40,10 +39,9 @@ nnoremap <Leader>f :Vexplore<CR>
 nnoremap <Leader>d :set background=dark<CR>
 nnoremap <Leader>l :set background=light<CR>
 nmap <Leader><Leader> V
-inoremap ;; <ESC>
 
 filetype plugin on
 
 execute pathogen#infect()
-let g:airline_theme='light'
+let g:airline_theme='dark'
 let g:airline_powerline_fonts=1
